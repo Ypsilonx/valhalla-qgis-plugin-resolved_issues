@@ -87,8 +87,8 @@ def get_output_features_matrix(response, profile, options={}, source_attrs=[], d
     """
 
     feats = []
-    sources = response['sources'][0]
-    targets = response['targets'][0]
+    sources = response['sources']
+    targets = response['targets']
     for o, origin in enumerate(response['sources_to_targets']):
         try:
             from_id = source_attrs[o]
